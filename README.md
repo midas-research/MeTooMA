@@ -14,9 +14,6 @@ a repository for sharing the dataset produced in the ICWSM paper titled #MeTooMA
 
 This repository contains link to download the data, and information about the corpus.
 
-For more details on how the dataset was created, and baseline models,
-please refer to our paper, [BHAAV- A Text Corpus for Emotion Analysis from Hindi Stories](https://arxiv.org/abs/1910.04073)
-
 The dataset can be obtained from https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JN4EYU
 
 ## Dataset Overview
