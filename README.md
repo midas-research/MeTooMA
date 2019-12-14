@@ -8,7 +8,7 @@ a repository for sharing the dataset produced in the ICWSM paper titled #MeTooMA
 </p>
 <br>
 
-**MeTooMA** is a dataset containing 9,973 tweets related  to  the  MeToo  movement  that  were  manually  annotated  for  five  different  linguistic  aspects:  **relevance**,  **stance**, **hate speech**, **sarcasm**, and **dialogue acts**. For more details please refer to the paper below.
+**MeTooMA** is a dataset containing 9,973 tweets related  to  the  MeToo  movement  that  were  manually  annotated  for  five  different  linguistic  aspects:  **relevance** (relevant, not relevant),  **stance** (support, opposition), **hate speech**  (directed hate, generalized hate), **sarcasm** (sarcastic, not sarcastic), and **dialogue acts** (allegation, refutation, justification). For more details please refer to the paper below.
 
 
 
