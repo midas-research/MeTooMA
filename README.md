@@ -103,12 +103,11 @@ Copyright (C) 2019 Multimodal Digital Media Analysis Lab - Indraprastha Institut
 Please cite [[1]](https://arxiv.org/pdf/1912.06927.pdf) if you found the resources in this repository useful.
 
 
-[1] Gautam, A., Mathur, P., Gosangi, R., Mahata, D., Sawhney, R., and Shah, R. R. [*#MeTooMA: Multi-Aspect Annotations of Tweets Related to the MeToo Movement*](https://arxiv.org/abs/1912.06927)
-
+[1] Gautam, A., Mathur, P., Gosangi, R., Mahata, D., Sawhney, R., & Shah, R. R. (2019). [*#MeTooMA: Multi-Aspect Annotations of Tweets Related to the MeToo Movement*](https://arxiv.org/abs/1912.06927). arXiv preprint arXiv:1912.06927.
 
 ```
 @article{gautam2019metooma,
-  title={#MeTooMA: Multi-Aspect Annotations of Tweets Related to the MeToo Movement},
+  title={\# MeTooMA: Multi-Aspect Annotations of Tweets Related to the MeToo Movement},
   author={Gautam, Akash and Mathur, Puneet and Gosangi, Rakesh and Mahata, Debanjan and Sawhney, Ramit and Shah, Rajiv Ratn},
   journal={arXiv preprint arXiv:1912.06927},
   year={2019}
