@@ -100,16 +100,37 @@ Copyright (C) 2019 Multimodal Digital Media Analysis Lab - Indraprastha Institut
 
 ## References
 
-Please cite [[1]](https://arxiv.org/pdf/1912.06927.pdf) if you found the resources in this repository useful.
+Please cite these papers if you found the relevant resources in this repository useful.
 
-
-[1] Gautam, A., Mathur, P., Gosangi, R., Mahata, D., Sawhney, R., & Shah, R. R. (2019). [*#MeTooMA: Multi-Aspect Annotations of Tweets Related to the MeToo Movement*](https://arxiv.org/abs/1912.06927). arXiv preprint arXiv:1912.06927.
 
 ```
-@article{gautam2019metooma,
+@inproceedings{gautam2020metooma,
   title={\# MeTooMA: Multi-Aspect Annotations of Tweets Related to the MeToo Movement},
   author={Gautam, Akash and Mathur, Puneet and Gosangi, Rakesh and Mahata, Debanjan and Sawhney, Ramit and Shah, Rajiv Ratn},
-  journal={arXiv preprint arXiv:1912.06927},
+  booktitle={Proceedings of the International AAAI Conference on Web and Social Media},
+  volume={14},
+  pages={209--216},
+  year={2020}
+}
+```
+
+```
+@inproceedings{chowdhury2019youtoo,
+  title={\# YouToo? detection of personal recollections of sexual harassment on social media},
+  author={Chowdhury, Arijit Ghosh and Sawhney, Ramit and Shah, Rajiv and Mahata, Debanjan},
+  booktitle={Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
+  pages={2527--2537},
+  year={2019}
+}
+```
+
+
+```
+@inproceedings{chowdhury2019speak,
+  title={Speak up, fight back! detection of social media disclosures of sexual harassment},
+  author={Chowdhury, Arijit Ghosh and Sawhney, Ramit and Mathur, Puneet and Mahata, Debanjan and Shah, Rajiv Ratn},
+  booktitle={Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Student Research Workshop},
+  pages={136--146},
   year={2019}
 }
 ```
