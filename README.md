@@ -11,7 +11,8 @@ a repository for sharing the dataset produced in the ICWSM paper titled #MeTooMA
 **MeTooMA** is a dataset containing 9,973 tweets related  to  the  MeToo  movement  that  were  manually  annotated  for  five  different  linguistic  aspects:  **relevance** (relevant, not relevant),  **stance** (support, opposition), **hate speech**  (directed hate, generalized hate), **sarcasm** (sarcastic, not sarcastic), and **dialogue acts** (allegation, refutation, justification). For more details please refer to the paper below.
 
 
-This repository contains link to download the data, and information about the corpus. Akash, the lead author of the work has also written a wonderful [blog post](https://medium.com/@418akash/a-multi-aspect-view-of-metoo-movement-on-twitter-9fdefae484df) describing the dataset and the rationale behind the study. Currently this dataset is a part of the HuggingFace `🤗Datasets` library for community usage. This would assist easy sharing and access of this dataset for research purposes. 
+This repository contains link to download the data, and information about the corpus. Akash, the lead author of the work has also written a wonderful [blog post](https://medium.com/@418akash/a-multi-aspect-view-of-metoo-movement-on-twitter-9fdefae484df) describing the dataset and the rationale behind the study. 
+Currently this dataset is a part of the HuggingFace `🤗Datasets` library for community usage. This would assist easy sharing and access of this dataset for research purposes. 
 
 The dataset can be obtained from https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JN4EYU
 
