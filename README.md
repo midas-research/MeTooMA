@@ -11,8 +11,7 @@ a repository for sharing the dataset produced in the ICWSM paper titled #MeTooMA
 **MeTooMA** is a dataset containing 9,973 tweets related  to  the  MeToo  movement  that  were  manually  annotated  for  five  different  linguistic  aspects:  **relevance** (relevant, not relevant),  **stance** (support, opposition), **hate speech**  (directed hate, generalized hate), **sarcasm** (sarcastic, not sarcastic), and **dialogue acts** (allegation, refutation, justification). For more details please refer to the paper below.
 
 
-
-This repository contains link to download the data, and information about the corpus. Akash, the lead author of the work has also written a wonderful [blog post](https://medium.com/@418akash/a-multi-aspect-view-of-metoo-movement-on-twitter-9fdefae484df) describing the dataset and the rationale behind the study. 
+This repository contains link to download the data, and information about the corpus. Akash, the lead author of the work has also written a wonderful [blog post](https://medium.com/@418akash/a-multi-aspect-view-of-metoo-movement-on-twitter-9fdefae484df) describing the dataset and the rationale behind the study. Currently this dataset is a part of the HuggingFace `🤗Datasets` library for community usage. This would assist easy sharing and access of this dataset for research purposes. 
 
 The dataset can be obtained from https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JN4EYU
 
@@ -66,7 +65,7 @@ The dataset can be obtained from https://dataverse.harvard.edu/dataset.xhtml?per
 
 <br>
 <p align="center">
-  <img src="https://github.com/midas-research/MeTooMA/blob/master/inter-annotator-agreement.png" alt="Inter-annotator agreements for all the annotation tasks"  width="60%"/>
+  <img src="https://github.com/midas-research/MeTooMA/blob/master/inter-annotator-agreement.png" alt="Inter-annotator agreements for all the annotation tasks"  width="40%"/>
   <br>
 </p>
 <br>
@@ -79,6 +78,75 @@ The dataset can be obtained from https://dataverse.harvard.edu/dataset.xhtml?per
   <br>
 </p>
 <br>
+
+
+## HuggingFace Support for MeTooMA Dataset
+<p align="center">
+    <br>
+    <img src="https://raw.githubusercontent.com/huggingface/datasets/master/docs/source/imgs/datasets_logo_name.jpg" width="35%"/>                                                                         
+    <br>
+<p>
+
+**MeTooMA** is officially now a part of the HuggingFace datasets library. `🤗Datasets` is a lightweight and extensible library to easily share and access datasets and evaluation metrics for Natural Language Processing (NLP) and more. It has many interesting features (beside easy sharing and accessing datasets/metrics):
+
+- Built-in interoperability with NumPy, pandas, PyTorch and Tensorflow 2
+- Lightweight and fast with a transparent and pythonic API
+- Strive on large datasets: `🤗Datasets` naturally frees the user from RAM memory limitation, all datasets are memory-mapped on drive by default.
+- Smart caching: never wait for your data to process several times
+
+### Installation
+
+`🤗Datasets` can be installed from PyPi and has to be installed in a virtual environment (venv or conda for instance)
+
+```bash
+pip install datasets
+```
+
+For more details on installation, check the installation page in the documentation: https://huggingface.co/docs/datasets/installation.html
+
+### Using with PyTorch/TensorFlow/pandas
+
+If you plan to use `🤗Datasets` with PyTorch (1.0+), TensorFlow (2.2+) or pandas, you should also install PyTorch, TensorFlow or pandas.
+
+For more details on using the library with NumPy, pandas, PyTorch or TensorFlow, check the quick tour page in the documentation: https://huggingface.co/docs/datasets/quicktour.html
+
+### Usage
+
+`🤗Datasets` is made to be very simple to use. The main methods are:
+
+- `datasets.list_datasets()` to list the available datasets
+- `datasets.load_dataset(dataset_name, **kwargs)` to instantiate a dataset
+- `datasets.list_metrics()` to list the available metrics
+- `datasets.load_metric(metric_name, **kwargs)` to instantiate a metric
+
+Here is a quick example to use **MeTooMA** dataset after installing the `🤗Datasets` library:
+
+```python
+from datasets import list_datasets, load_dataset, list_metrics, load_metric
+
+# Print all the available datasets
+print(list_datasets())
+
+# Load a dataset and print the first examples in the training set
+metooma_dataset = load_dataset('metooma')
+print(metooma_dataset['train'][0])
+{'Allegation': 0, 'Directed_Hate': 0, 'Generalized_Hate': 0, 'Image_Only_Informative': 1, 
+'Justification': 1, 'Oppose': 0, 'Refutation': 0, 'Sarcasm': 0, 'Support': 1, 
+'Text_Only_Informative': 1, 'TweetId': '1052237153789390853'}
+
+
+# List all the available metrics
+print(list_metrics())
+['accuracy', 'bertscore', 'bleu', 'bleurt', 'coval', 'f1', 'gleu', 'glue', 'indic_glue', 'meteor', 
+'precision', 'recall', 'rouge', 'sacrebleu', 'seqeval', 'squad', 'squad_v2', 'xnli']
+
+```
+A few pointers to note for the members of the community using this dataset:
+- The presence of 0 or 1 indicates the absence or presence of an applicable label for a given Tweet.
+- You can browse the live version of this dataset with [live datasets viewer](https://huggingface.co/datasets/viewer/?dataset=metooma)
+- The dataset is already split into train and test splits. Please refer to the example for its usage. 
+- Please refer to the accompanying publication for detailed information about the data collection process, annotation, 
+statistical analysis and ethical discussions on this dataset. 
 
 
 ## Terms of Use
